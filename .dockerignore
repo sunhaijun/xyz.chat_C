@@ -1,0 +1,11 @@
+z-deploy
+docker-release-image.sh
+
+.github
+.husky
+.tauri
+.env*.local
+.env
+*.key
+*.key.pub
+
