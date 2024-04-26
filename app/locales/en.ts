@@ -416,7 +416,7 @@ const en: LocaleType = {
   },
   HomeInfo: {
     Name: "xyz.chat",
-    Slogan: "Bringing AGI to everyone.",
+    Slogan: "Use top-tier models like GPT-4, Claude3 Opus",
   },
   OfficialSite: {
     Name: "Home",

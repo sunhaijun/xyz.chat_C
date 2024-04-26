@@ -159,6 +159,7 @@ function Screen() {
               const rps = data.rps;
               const token = data.access_token;
               if (token && token.length > 0) {
+                console.log("rps:", rps);
                 accessStore.update((access) => {
                   access.rpsEndPoint = rps;
                   access.authToken = token;
@@ -205,24 +206,6 @@ function Screen() {
     </div>
   );
 }
-
-// export function useLoadData() {
-//   const config = useAppConfig();
-
-//   var api: ClientApi;
-//   if (config.modelConfig.model.startsWith("gemini")) {
-//     api = new ClientApi(ModelProvider.GeminiPro);
-//   } else {
-//     api = new ClientApi(ModelProvider.GPT);
-//   }
-//   useEffect(() => {
-//     (async () => {
-//       const models = await api.llm.models();
-//       config.mergeModels(models);
-//     })();
-//     // eslint-disable-next-line react-hooks/exhaustive-deps
-//   }, []);
-// }
 
 export function Home() {
   useSwitchTheme();

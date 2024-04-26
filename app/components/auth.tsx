@@ -34,7 +34,6 @@ export function AuthPage() {
 
   const resetAccessCode = () => {
     accessStore.update((access) => {
-      // access.customModels = "";
       access.rpsEndPoint = "";
       access.authToken = "";
     });
@@ -65,6 +64,7 @@ export function AuthPage() {
       const bodyData = response.data;
 
       if (bodyData.status === "success") {
+        console.log("rps:", bodyData.data.rps);
         accessStore.update((access) => {
           access.rpsEndPoint = bodyData.data.rps;
           access.authToken = bodyData.data.access_token;
