@@ -493,7 +493,8 @@ const cn = {
     Unauthorized: "欢迎！小趣终于遇见你啦！请先前往[登录页面](/#/auth)。新用户可先到[官网(OneDollarGPT.com)](https://onedollargpt.com)完成注册，就能开始免费使用哟～",
     Unauthorized2: "请先登录后再试！注册后，您将立即获赠可使用GPT-3.5 Turbo，Claude3 Haiku等大模型的免费积分，每日重置使用额度。您也可以购买积分来使用更高级别大模型。感谢您的支持！",
     NeedRecharge:
-      "非常抱歉,当前我没有足够的积分来与您进行完整的对话。您可以访问我们的[官网(OneDollarGPT.com)](https://onedollargpt.com/#prices-wrapper)来了解更多信息和购买积分。\n\n  XYZ.Chat也同时提供Claude 3 Opus、GPT-4 Turbo这样的顶尖大模型的会话服务。免费积分仅可使用Claude 3 Haiku，以及GPT-3.5 Turbo；更高级别大模型会话则需要您先充值积分才能使用。希望您能理解并支持我们的这种模式,让我们的服务变得更加可持续，再次感谢您的理解与支持!",
+      "抱歉,当前会话积分余额不足，您可待明日免费赠送积分到账后继续使用。或者您可以访问我们的[官网(OneDollarGPT.com)](https://onedollargpt.com/#prices-wrapper)来了解更多信息和购买积分。\n\n  XYZ.Chat也同时提供GPT-4 Turbo、Claude 3 Opus这样的顶尖大模型的会话服务。免费积分仅可使用Claude 3 Haiku，以及GPT-3.5 Turbo，更高级别大模型会话则需使用付费积分。希望您能理解并支持我们的这种模式,让我们的服务变得更加可持续，再次感谢您的理解与支持!",
+    NeedPaidCredits: "当前选择模型为付费模型，请购买积分再使用。\n\n  您可以访问我们的[官网(OneDollarGPT.com)](https://onedollargpt.com/#prices-wrapper)来了解更多信息和购买积分。",
   },
   Auth: {
     AlreadyLoginTitle: "当前已登录",

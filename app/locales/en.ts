@@ -12,6 +12,7 @@ const en: LocaleType = {
     Unauthorized2: "Welcome! Please go to the [Login](/#/auth) page to log in or register as a new user.",
     NeedRecharge:
       "I apologize sincerely, but I don't have enough credits to engage in a complete conversation with you. You can visit our [official website (OneDollarGPT.com)](https://onedollargpt.com/#prices-wrapper) for more information and to purchase credits.\n\nXYZ.Chat operates on a credit-based system. Free credits only grant access to GPT-3.5 and Claude3-Haiku. Some advanced models require you to top up your credits before use. We appreciate your understanding and support for this model, as it helps sustain our service. Once again, thank you for your understanding and support!",
+    NeedPaidCredits: "This model requires paid credits to use. Please visit our [official website (OneDollarGPT.com)](https://onedollargpt.com/#prices-wrapper) to purchase credits.",
   },
   Auth: {
     AlreadyLoginTitle: "Already Logged In",

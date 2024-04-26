@@ -203,6 +203,8 @@ export class ClaudeApi implements LLMApi {
                 responseText = Locale.Error.Unauthorized;
               } else if (res.status === 402) {
                 responseText = Locale.Error.NeedRecharge;
+              } else if (res.status === 406) {
+                responseText = Locale.Error.NeedPaidCredits;
               } else {
                 responseText = await res.clone().text();
               }
@@ -228,9 +230,12 @@ export class ClaudeApi implements LLMApi {
               } catch {}
 
               if (res.status === 401) {
-                // 未授权错误
                 responseTexts.push(Locale.Error.Unauthorized);
-              }
+              } else if (res.status === 402) {
+                responseTexts.push(Locale.Error.NeedRecharge);
+              } else if (res.status === 406) {
+                responseTexts.push(Locale.Error.NeedPaidCredits);
+              } 
 
               if (extraInfo) {
                 responseTexts.push(extraInfo);
